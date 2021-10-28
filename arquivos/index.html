@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lago.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/tela.css">
 </head>
-<body>
+<body id="body" class="dia-body">
     <header>
         <nav class="">
             <div class="logo"><h1>Fco Neto</h1></div>
@@ -20,14 +20,26 @@
                 <li><a href="">INSTAGRAM</a></li>
             </ul>
             <div>
-                <div class="tema"></div>
+                <div id="tema" class="dia-noite dia-check">
+                    <div id="sol" class="sol"></div>
+                    <div id="lua" class=""></div>
+                    <input type="checkbox" name="tema" id="tema-check">
+                </div>
                 <div class="lingua"></div>
             </div>
         </nav>
     </header>
 
     <div class="principal">
-
+        <div class="tela">
+            <div id="horario" class="hora"><h2></h2></div>
+            <div class="bateria"></div>
+        </div>
+        <div class="descricao">
+            <h1 class="titulo">FULL STACK DEVELOPER</h1>
+            <p>Trabalho tanto com frontend e backend</p>
+        </div>
+        
     </div>
     
     <main class="projetos">
@@ -50,6 +62,7 @@
 
     </footer>
 </body>
-<script src="script/lago.js"></script>
+<script src="script/tema.js"></script>
+<script src="script/hora.js"> </script>
 
 </html>
