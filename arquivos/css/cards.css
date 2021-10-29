@@ -2,8 +2,9 @@
 .projetos {
     position: relative;
     display: flex;
+    justify-content: center;
     width: 80%;
-    max-height: 20rem;
+    height: max-content;
     margin: auto;
     top: 100vh;
     background-color: green;
@@ -14,10 +15,11 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 10rem;
-    height: 15rem;
+    width: 12vw;
+    height: 17vw;
     margin: 2rem 2rem 2rem 2rem;
     background: rgb(94, 65, 65);
+    text-decoration: none;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.7rem;
@@ -31,8 +33,8 @@
     content: "";
     position: absolute;
     display: flex;
-    width: 10rem;
-    height: 15rem;
+    width: 12vw;
+    height: 17vw;
     z-index: 100;
 
     transition-property: width, height, box-shadow;
@@ -41,11 +43,44 @@
 
 .card:hover::after {
     box-shadow: 0 0 5rem 1.5rem inset #000000b7;
-    width: 11rem;
-    height: 17rem;
+    width: 14vw;
+    height: 19vw;
 }
 
 .card:hover {
-    width: 11rem;
-    height: 17rem;
+    width: 14vw;
+    height: 19vw;
+}
+
+@media screen and (max-width: 670px) {
+    
+    .projetos {
+        position: relative;
+        display: grid;
+        width: 80%;
+        height: max-content;
+        margin: auto;
+        top: 100vh;
+        background-color: green;
+    }
+
+    .card {
+        width: 30vw;
+        height: 37vw;
+    }
+    
+    .card::after {
+        width: 30vw;
+        height: 37vw;
+    }
+
+    .card:hover {
+        width: 32vw;
+        height: 39vw;
+    }
+
+    .card:hover::after {
+        width: 32vw;
+        height: 39vw;
+    }
 }

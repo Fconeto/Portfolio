@@ -1,0 +1,21 @@
+
+.principal {
+    position: relative;
+    display: flex;
+    top: 20vh;
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+    color: white;
+}
+
+.descricao {
+    position: relative;
+    display: block;
+    background: greenyellow;
+    text-shadow: 0.15rem 0.15rem black;
+    font-size: 1.5vw;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 30%;
+    height: max-content;
+}

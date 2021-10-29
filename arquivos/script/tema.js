@@ -1,8 +1,8 @@
 let checkbox = document.getElementById("tema-check");
-let sol = document.getElementById("sol");
-let lua = document.getElementById("lua");
+let solLua = document.getElementById("sol-lua");
 let tema = document.getElementById("tema");
 let body = document.getElementById("body");
+let root = document.documentElement;
 
 tema.addEventListener("click", function iluminacao() {
     if (checkbox.checked) {
@@ -15,8 +15,10 @@ tema.addEventListener("click", function iluminacao() {
         tema.classList.add("noite-check");
         tema.classList.remove("dia-check");
 
-        lua.classList.add("lua");
-        sol.classList.remove("sol");
+        solLua.classList.add("lua");
+        solLua.classList.remove("sol");
+
+        root.style.setProperty("--cor-logo", 'white');
     }
     else {
         console.log("dia");
@@ -27,7 +29,10 @@ tema.addEventListener("click", function iluminacao() {
         tema.classList.add("dia-check");
         tema.classList.remove("noite-check");
 
-        sol.classList.add("sol");
-        lua.classList.remove("lua");
+        solLua.classList.add("sol");
+        solLua.classList.remove("lua");
+
+        root.style.setProperty("--cor-logo", '#242424');
+
     }
 });

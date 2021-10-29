@@ -6,28 +6,45 @@
     font-family:  "Wotfard",Futura,-apple-system,sans-serif;
     font-weight: bold;
     z-index: 1;
+
 }
+
+:root {
+    --cor-logo: #242424;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Qahiri&display=swap');
+
+.fonts {
+    font-family: 'Irish Grover', cursive;
+    font-family: 'Qahiri', sans-serif;  
+}
+
+@font-face {
+    font-family: Rhesmanisa Regular;
+    src: url(Rhesmanisa.otf) format('opentype');
+    
+}
+
+@font-face {
+    font-family: Seconds;
+    src: url(Seconds.otf) format('opentype');
+}
+
 
 body {
     position: relative;
     height: 100vh;
-    width: 100vw;
-}
-
-.dia-body {
-    background: linear-gradient(to right, #ffffff 29%, transparent 29%), linear-gradient(to bottom, #048cc2, #06a6e6 );
-
-}
-
-.noite-body {
-    background: linear-gradient(to right, #252525 29%, transparent 29%), linear-gradient(to bottom, #111920, #26313b );
+    width: 100%;
 }
 
 header {
     position: absolute;
     width: 100%;
     height: 3rem;
-    z-index: 10;
+    z-index: 10;    
     /* background: #46b99d; */
     
 }
@@ -36,11 +53,19 @@ header {
     display: flex;
     justify-content: center;
     width: 20%;
+    color: var(--cor-logo);
+    text-decoration: none;
+    /* background: #0c1311; */
 
-    color: white;
+}
+
+.logo h1 {
+    font-size: 3vw;
+    font-family: Seconds;  
 }
 
 nav {
+    position: relative;
     display: flex;
     width: 100%;
     height: 100%;
@@ -50,10 +75,12 @@ nav {
 }
 
 nav ul {
+    position: relative;
     display: flex;
-    width: 70%;
+    left: 10vw;
+    width: 100%;
     list-style: none;
-    justify-content: space-around;
+    justify-content:center;
 
 }
 
@@ -63,9 +90,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--cor-logo);
     font-size: 1.5vw;
 
+    margin: 0 2vw 0 2vw;
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     border-radius: 8px;
 
@@ -75,7 +103,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: white;
-    color: turquoise;
+    color: #21323d;
 }
 
 .dia-noite {
@@ -83,70 +111,28 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 1vw;
     width: 4vw;
     height: 2.5vw;
     border-radius: 50vw;
     margin-right: 2vw;
-
     
 }
 
-.sol {
-    position: absolute;
-    width: 2vw;
-    height: 1.8vw;
-    left: 5%;
-    border-radius: 50%;
-    background: radial-gradient(ellipse, yellow, orange);
-}
-
-.lua {
-    position: absolute;
-    width: 2vw;
-    height: 1.8vw;
-    left: 95%;
-    transform: translateX(-100%) rotate(180deg);
-    border-radius: 50%;
-    background: #1a1919;
-    box-shadow: 0.6vw 0 0 0 inset white;
-}
-
-.dia-check {
-    box-shadow: 0 0 0 0.2vw inset white,
-    0 0 0 10vw inset cyan;
-}
-
-.noite-check {
-    box-shadow: 0 0 0 0.2vw inset white,
-    0 0 0 10vw inset #1a1919;
-}
-
-#tema-check {
-    position: relative;
-    width: 4vw;
-    height: 2vw;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.principal {
-    position: relative;
-    display: flex;
-    top: 20vh;
-    margin: auto;
-    width: 80%;
-    height: fit-content;
-    color: white;
-    /* background: #225683; */
-}
-
-.descricao {
-    position: relative;
-    display: block;
-    background: greenyellow;
-    text-shadow: 0.15rem 0.15rem black;
+.lingua {
+    color: var(--cor-logo);
     font-size: 1.5vw;
-    margin: 1rem 1rem 1rem 1rem;
-    width: 30%;
-    height: max-content;
+    text-decoration: none;
+    margin-right: 4vw;
+}
+
+@media screen and (max-width: 670px) {
+    nav ul {
+        display: none;
+    }
+
+    .dia-noite {
+        left: 30vw;
+
+    }
 }

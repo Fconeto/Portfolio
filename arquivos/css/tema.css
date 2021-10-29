@@ -1,0 +1,48 @@
+
+.dia-body {
+    background: linear-gradient(to right, #ffffff 29%, transparent 29%), linear-gradient(to bottom, #048cc2, #06a6e6 );
+
+}
+
+.noite-body {
+    background: linear-gradient(to right, #252525 29%, transparent 29%), linear-gradient(to bottom, #111920, #323c46);
+}
+
+.sol {
+    position: absolute;
+    width: 2vw;
+    height: 1.8vw;
+    left: 5%;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, yellow, orange);
+}
+
+.lua {
+    position: absolute;
+    width: 2vw;
+    height: 1.8vw;
+    left: 95%;
+    transform: translateX(-100%) rotate(180deg);
+    border-radius: 50%;
+    background: #1a1919;
+    box-shadow: 0.6vw 0 0 0 inset white;
+
+}
+
+.dia-check {
+    box-shadow: 0 0 0 0.2vw inset white,
+    0 0 0 10vw inset cyan;
+}
+
+.noite-check {
+    box-shadow: 0 0 0 0.2vw inset white,
+    0 0 0 10vw inset #1a1919;
+}
+
+#tema-check {
+    position: relative;
+    width: 4vw;
+    height: 2vw;
+    opacity: 0;
+    cursor: pointer;
+}
