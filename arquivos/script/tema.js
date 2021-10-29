@@ -6,11 +6,8 @@ let root = document.documentElement;
 
 tema.addEventListener("click", function iluminacao() {
     if (checkbox.checked) {
-        console.log("noite");
-
-        body.classList.add("noite-body");
-        body.classList.remove("dia-body");
-
+        root.style.setProperty("--cor-body", 'linear-gradient(to right, #252525 29%, transparent 29%), linear-gradient(to bottom, #111920, #323c46)');
+        root.style.setProperty("--cor-logo", 'white');
 
         tema.classList.add("noite-check");
         tema.classList.remove("dia-check");
@@ -18,21 +15,16 @@ tema.addEventListener("click", function iluminacao() {
         solLua.classList.add("lua");
         solLua.classList.remove("sol");
 
-        root.style.setProperty("--cor-logo", 'white');
     }
     else {
-        console.log("dia");
-        body.classList.add("dia-body");
-        body.classList.remove("noite-body");
-
+        root.style.setProperty("--cor-body", 'linear-gradient(to right, #ffffff 29%, transparent 29%), linear-gradient(to bottom, #048cc2, #06a6e6 )');
+        root.style.setProperty("--cor-logo", '#242424');
 
         tema.classList.add("dia-check");
         tema.classList.remove("noite-check");
 
         solLua.classList.add("sol");
         solLua.classList.remove("lua");
-
-        root.style.setProperty("--cor-logo", '#242424');
 
     }
 });

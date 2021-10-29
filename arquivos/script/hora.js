@@ -5,6 +5,7 @@ let hora = document.getElementById("horario");
     let m=valHora.getMinutes();
 
     if (m < 10) {m = "0" + m;}
+    if (h < 10) {h = "0" + h;}
     hora.innerHTML = h + ":" + m;
     setTimeout('horaUpdate()',500);
     }

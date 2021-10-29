@@ -10,7 +10,8 @@
 }
 
 :root {
-    --cor-logo: #242424;
+    --cor-logo: white;
+    --cor-body: linear-gradient(to right, #252525 29%, transparent 29%), linear-gradient(to bottom, #111920, #323c46);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
@@ -38,6 +39,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100%;
+    background: var(--cor-body);
 }
 
 header {
@@ -92,6 +94,7 @@ nav ul li a {
     text-decoration: none;
     color: var(--cor-logo);
     font-size: 1.5vw;
+    font-family: 'Irish Grover', cursive;
 
     margin: 0 2vw 0 2vw;
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
@@ -121,18 +124,37 @@ nav ul li a:hover {
 
 .lingua {
     color: var(--cor-logo);
+    font-family: 'Irish Grover', cursive;
     font-size: 1.5vw;
     text-decoration: none;
     margin-right: 4vw;
 }
 
 @media screen and (max-width: 670px) {
-    nav ul {
+    nav ul, .dia-noite, .lingua {
         display: none;
     }
 
-    .dia-noite {
-        left: 30vw;
+    .menu-mobile{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 90vw;
+        width: 4.2vw;
+        height: 2.5vw;
+        background-color: green;
+        cursor: pointer;
+    }
 
+    .menu-mobile div {
+        position: relative;
+        width: 4vw;
+        height: 0.35vw;
+        background-color: white;
+        border-radius: 50vw;
+
+        box-shadow: 0 1vw 0 0 white,
+        0 -1vw 0 0 white;
     }
 }

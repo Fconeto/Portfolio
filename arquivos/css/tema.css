@@ -1,13 +1,4 @@
 
-.dia-body {
-    background: linear-gradient(to right, #ffffff 29%, transparent 29%), linear-gradient(to bottom, #048cc2, #06a6e6 );
-
-}
-
-.noite-body {
-    background: linear-gradient(to right, #252525 29%, transparent 29%), linear-gradient(to bottom, #111920, #323c46);
-}
-
 .sol {
     position: absolute;
     width: 2vw;
