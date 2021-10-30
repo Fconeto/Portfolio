@@ -42,3 +42,50 @@
     0.4vw 0 0 0 inset white;
 
 }
+
+.wallpaper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 15vw;
+    height: 15vw;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+
+    box-shadow: 
+    0 0 0 0.5vw inset #4f9cdb,
+    0 0 0 1vw inset #1b1b1b,
+    0 0 0 1.5vw inset #4f9cdb,
+    0 0 0 2vw inset #1b1b1b,
+    0 0 0 2.5vw inset #4f9cdb,
+    0 0 0 3vw inset #1b1b1b,
+    0 0 0 3.5vw inset #4f9cdb,
+    0 0 0 4vw inset #1b1b1b,
+    0 0 0 4.5vw inset #4f9cdb,
+    0 0 0 5vw inset #1b1b1b,
+    0 0 0 5.5vw inset #4f9cdb
+    ;
+    z-index: 0;
+}
+
+@keyframes circulo-1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        
+    }
+}
+
+@keyframes circulo-2 {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        
+    }
+}

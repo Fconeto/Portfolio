@@ -7,8 +7,7 @@
     width: 80%;
     height: max-content;
     margin: auto;
-    top: 60vh;
-    /* background-color: green; */
+    background-color: green;
 }
 
 .projetos h2 {
@@ -21,10 +20,10 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 12vw;
-    height: 17vw;
+    width: 12rem;
+    height: 17rem;
     margin: 3rem 2rem 3rem 2rem;
-    background: rgb(94, 65, 65);
+    background: black;
     text-decoration: none;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -39,8 +38,8 @@
     content: "";
     position: absolute;
     display: flex;
-    width: 12vw;
-    height: 17vw;
+    width: 12rem;
+    height: 17rem;
     z-index: 100;
 
     transition-property: width, height, box-shadow;
@@ -49,13 +48,13 @@
 
 .card:hover::after {
     box-shadow: 0 0 5rem 1.5rem inset #000000b7;
-    width: 14vw;
-    height: 19vw;
+    width: 14rem;
+    height: 19rem;
 }
 
 .card:hover {
-    width: 14vw;
-    height: 19vw;
+    width: 14rem;
+    height: 19rem;
 }
 
 @media screen and (max-width: 670px) { 
