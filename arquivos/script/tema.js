@@ -8,6 +8,8 @@ tema.addEventListener("click", function iluminacao() {
     if (checkbox.checked) {
         root.style.setProperty("--cor-body", 'linear-gradient(to right, #252525 29%, transparent 29%), linear-gradient(to bottom, #111920, #323c46)');
         root.style.setProperty("--cor-logo", 'white');
+        root.style.setProperty("--cor-main1", '#774069');
+
 
         tema.classList.add("noite-check");
         tema.classList.remove("dia-check");
@@ -19,6 +21,8 @@ tema.addEventListener("click", function iluminacao() {
     else {
         root.style.setProperty("--cor-body", 'linear-gradient(to right, #ffffff 29%, transparent 29%), linear-gradient(to bottom, #048cc2, #06a6e6 )');
         root.style.setProperty("--cor-logo", '#242424');
+        root.style.setProperty("--cor-main1", '#b44e1f');
+
 
         tema.classList.add("dia-check");
         tema.classList.remove("noite-check");

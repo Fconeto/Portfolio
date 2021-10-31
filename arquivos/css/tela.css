@@ -68,24 +68,26 @@
     z-index: 0;
 }
 
-@keyframes circulo-1 {
-    0% {
-        transform: rotate(0);
-    }
+.app {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 50%;
+    height: 50%;
+    background: chocolate;
 
-    100% {
-        transform: rotate(360deg);
-        
-    }
 }
 
-@keyframes circulo-2 {
-    0% {
-        transform: rotate(90deg);
-    }
+.app a img {
+    width: 3vw;
+    height: 3vw;
+    margin: 0 0.5rem 0 0.5rem;
+}
 
-    100% {
-        transform: rotate(360deg);
-        
-    }
+.app a h2 {
+    color: white;
+    width: 2vw;
 }

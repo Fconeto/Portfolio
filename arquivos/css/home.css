@@ -24,9 +24,10 @@
     position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
     top: 100vh;
     width: 100%;
     height: max-content;
     min-height: 100vh;
-    background: #774069;
+    background: var(--cor-main1);
 }
