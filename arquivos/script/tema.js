@@ -21,7 +21,7 @@ tema.addEventListener("click", function iluminacao() {
     else {
         root.style.setProperty("--cor-body", 'linear-gradient(to right, #ffffff 29%, transparent 29%), linear-gradient(to bottom, #048cc2, #06a6e6 )');
         root.style.setProperty("--cor-logo", '#242424');
-        root.style.setProperty("--cor-main1", '#b44e1f');
+        root.style.setProperty("--cor-main1", '#fec24e');
 
 
         tema.classList.add("dia-check");
