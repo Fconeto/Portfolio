@@ -15,6 +15,14 @@
     color: white;
 }
 
+.projetos a h2 {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Irish Grover', cursive;
+
+}
+
 .card {
     position: relative;
     display: flex;
@@ -78,4 +86,62 @@
         width: 32vw;
         height: 39vw;
     }
+}
+
+
+
+.pagina {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.site-art {
+    position: relative;
+    width: 80%;
+    height:58%;
+    border-radius: 10%;
+
+    box-shadow: 
+    0 0 0 15vmin inset #ffffff;
+
+}
+
+.site-art::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    width: 40%;
+    height: 7%;
+    border-radius: 50px;
+    background: #383838;
+
+    box-shadow:
+    0 0vmin 0 0.8vmin inset #383838,
+    8.5vmin 0vmin 0 0  #383838,
+    8.5vmin 5vmin 0 0  #e6f700,
+    8.5vmin 7.5vmin 0 0  #e6f700,
+    8.5vmin 10vmin 0 0  #e6f700;
+}
+
+
+.site-art::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    background: #383838;
+
+    box-shadow: 
+    11vmin 8.5vmin 0 0vmin  #d6413c,
+    0vmin 8.5vmin 0 0vmin  #145c9e;
 }
