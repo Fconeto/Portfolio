@@ -10,59 +10,123 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/tela.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="./css/curriculo.css">
 </head>
-<body id="body" class="dia-body">
+<body id="body">
     <header>
-        <nav class="">
-            <a href="index.html" class="logo"><h1>FCO NETO</h1></a>
+        <nav>
+            <a href="index.html" class="logo"><h1>FRANCISCO LINHARES</h1></a>
+            <div id="menu-hbg" class="menu-mobile">
+                <div></div>
+            </div>
+            <div id="menu_tela" class="nav_mobile">
+                <span id="menu-fechar">X</span>
+                <h2><a id="atalho_sobre" href="#sobre">ABOUT</a></h2>
+                <h2><a id="atalho_projetos" href="#projetos">PROJECTS</a></h2>
+                <h2><a href="index.html" class="">PORTUGUESE</a></h2>
+            </div>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">GITHUB</a></li>
-                <li><a href="">LINKEDIN</a></li>
-                <li><a href="">INSTAGRAM</a></li>
+                <li><a href="#sobre">ABOUT</a></li>
+                <li><a href="#projetos">PROJECTS</a></li>
             </ul>
-                <div id="tema" class="dia-noite dia-check">
-                    <div id="sol-lua" class="sol"></div>
+                <div id="tema" class="dia-noite noite-check">
+                    <div id="sol-lua" class="lua"></div>
                     <div id="lua" class=""></div>
-                    <input type="checkbox" name="tema" id="tema-check">
+                    <input type="checkbox" name="tema" checked id="tema-check">
                 </div>
-                <a href="home-english.html" class="lingua">ENGLISH</a>
+                <a href="index.html" class="lingua">PORTUGUESE</a>
         </nav>
     </header>
 
     <div class="principal">
         <div class="tela">
+            <img class="eu" src="./img/eu.jpg" alt="">
             <div id="horario" class="hora"><h2></h2></div>
-            <div class="bateria"></div>
+            <div class="app">
+                <h2>Social networks</h2>
+                <div>
+                    <a class="icon github" target="_blank" href="https://github.com/Fconeto"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="Github"></a>
+                    <a class="icon linkedin" target="_blank" href="https://www.linkedin.com/in/francisco-linhares-76344b210/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="Linkedin"></a>
+                    <a class="icon instagram" target="_blank" href="https://www.instagram.com/fco_linharess/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram"></a>    
+                </div>
+            </div>
+            <div>
+                
+            </div>
         </div>
         <div class="descricao">
             <h1 class="titulo">FULL STACK DEVELOPER</h1>
-            <p>Trabalho tanto com frontend e backend</p>
         </div>
-        
     </div>
-    
-    <main class="projetos">
 
-        <a href="https://codepen.io/collection/RzwBPy" class="card sites">
-            <h2>Template de sites</h2>
-        </a>
-        <div class="card animations">
-            <h2>Animações</h2>
+    <main id="sobre" class="main2">
+        <div id="resume" class="curriculo">
+            <h1>ABOUT ME</h1>
+            <h2>Name: Francisco Linhares da Silva Neto</h2>
+            <h2>Date of Birth": 08/04/2001</h2>
+            <h2>Number: +55 (88) 99936-3358</h2>
+            <h2>E-mail: linharesipuce@gmail.com</h2>
+            <h1>EDUCATION</h1>
+            <h2>Technical in Computer network - EEEP Antônio Tarcísio Aragão - 2016 - 2018</h2>
+            <h2>Graduation in Information systems - UFC - 2022.1 - Em andamento</h2>
+            <h1>PROFESSIONAL EXPERIENCE</h1>
+            <h2>Trainee - Coimbra Contabilidade e Assessoria - 08/2018 - 12/2018</h2>
+            <h2>Technical support analyst - JN Moura Sistemas de Gestão - 08/2023 - Presente</h2>
+            <h1>KNOWLEDGE</h1>
+            <h2>Javascript</h2>
+            <h2>Web development</h2>
+            <h2>React</h2>
+            <h2>Bootstrap</h2>
+            <h2>Python</h2>
+            <h2>MySQL</h2>
+            <h1>PROJECTS</h1>
+            <h2>Fastannotation</h2>
+            <p>Fastannotation was a project developed by me and my team during 1 year of 
+                my scholarship at UFC, this project consists of a WEB platform where the
+                user could create their textual projects, related to college or work, 
+                and categorize your texts more easily, allowing you to organize your projects,
+                identifying passages with greater relevance, creating categories for paragraphs, among others.
+            </p>
+            <h2>Localiza UFC</h2>
+            <p>Localiza UFC is a project being developed by me and another colleague for the Hackathon
+                of the year 2024 at UFC, this project consists of an application that will allow anyone
+                have access to a virtual map of the UFC campuses that will display the rooms and all the schedules,
+                including events, classes, short courses, UK meals and other things.
+            </p>
         </div>
-        <div class="card arts">
-            <h2>Artes em CSS</h2>
-        </div>
-        <div class="card jogos">
-            <h2>Jogos <br> (em breve)</h2>
+      </main>
+    
+    <main class="main1">
+        <div id="projetos" class="projetos">
+            <h2>PROJECTS</h2>
+            <a href="https://codepen.io/collection/RzwBPy" class="card sites">
+                <div class="pagina">
+                    <div class="site-art"></div>
+                </div>
+                <h2>Website Template</h2>
+            </a>
+            <a href="" class="card animations">
+                <h2>Animations</h2>
+            </a>
+            <a href="" class="card arts">
+                <h2>CSS Arts</h2>
+                <div>
+                    <img src="./img/Screenshot_1.png" alt="">
+                    <img src="./img/Screenshot_2.png" alt="">
+                    <img src="./img/Screenshot_3.png" alt="">    
+                    <img src="./img/Screenshot_4.png" alt="">    
+                    <img src="./img/Screenshot_5.png" alt="">    
+                </div>
+
+            </a>
+            <a href="" class="card jogos">
+                <h2>Games <br> (Coming soon)</h2>
+            </a>
         </div>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 <script src="script/tema.js"></script>
 <script src="script/hora.js"> </script>
+<script src="script/menu.js"></script>
 
 </html>

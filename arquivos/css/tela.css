@@ -13,7 +13,7 @@
     -1vw 1vw 0.5vw 0 black,
     0 -0.1vw 0.5vw 0.2vw inset #1b1b1b, 
     0 0 0 1vw inset black,
-    0 2vw 0vw 0vw inset #a5a2a2,
+    0 25px 0vw 0vw inset #a5a2a2,
     0 0vw 0vw 40vw inset #1b1b1b
     ;
 }
@@ -23,7 +23,7 @@
     display: flex;
     top: 4.5%;
     left: 85%;
-    font-size: 0.8vw;
+    font-size: 0.7rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -45,53 +45,47 @@
 
 }
 
-.wallpaper {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 15vw;
-    height: 15vw;
-    transform: translateX(-50%) translateY(-50%);
-    border-radius: 50%;
-
-    box-shadow: 
-    0 0 0 0.5vw inset #4f9cdb,
-    0 0 0 1vw inset #1b1b1b,
-    0 0 0 1.5vw inset #4f9cdb,
-    0 0 0 2vw inset #1b1b1b,
-    0 0 0 2.5vw inset #4f9cdb,
-    0 0 0 3vw inset #1b1b1b,
-    0 0 0 3.5vw inset #4f9cdb,
-    0 0 0 4vw inset #1b1b1b,
-    0 0 0 4.5vw inset #4f9cdb,
-    0 0 0 5vw inset #1b1b1b,
-    0 0 0 5.5vw inset #4f9cdb
-    ;
-    z-index: 0;
-}
-
 .app {
     position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     top: 50%;
-    left: 50%;
+    left: 25%;
     transform: translateY(-50%) translateX(-50%);
-    width: 50%;
-    height: 50%;
-    background: chocolate;
+    width: 40%;
+    align-items: center;
+    height: 70%;
+    padding: 2% 1% 2% 1%;
+    border-radius: 10px;
+    background: #a5a2a252;
 
+    font-size: var(--font-app);
 }
 
-.app a img {
-    width: 3vw;
-    height: 3vw;
+.app div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.app img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 20%;
+    height: 20%;
     margin: 0 0.5rem 0 0.5rem;
 }
 
-.app a h2 {
-    color: white;
-    width: 2vw;
+.eu {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border-radius: 50%;
+    width: 30%;
 }
 
 @media screen and (max-width: 670px) {
@@ -99,6 +93,10 @@
         flex-wrap: wrap;
         justify-content: center;
         
+    }
+
+    .hora {
+        font-size: var(--font-hora);
     }
  
     .tela {
@@ -110,8 +108,10 @@
         -1vw 1vw 0.5vw 0 black,
         0 -0.1vw 0.5vw 0.2vw inset #1b1b1b, 
         0 0 0 1vw inset black,
-        0 2vw 0vw 0vw inset #a5a2a2,
+        0 3vw 0vw 0vw inset #a5a2a2,
         0 0vw 0vw 40vw inset #1b1b1b
         ;
     }
 }
+
+

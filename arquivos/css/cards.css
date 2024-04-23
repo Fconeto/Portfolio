@@ -6,8 +6,7 @@
     justify-content: center;
     width: 80%;
     height: 80%;
-    margin: auto;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .projetos h2 {
@@ -25,6 +24,7 @@
 
 .card {
     position: relative;
+    overflow: hidden;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -144,4 +144,15 @@
     box-shadow: 
     11vmin 8.5vmin 0 0vmin  #d6413c,
     0vmin 8.5vmin 0 0vmin  #145c9e;
+}
+
+.arts div {
+    position: absolute;
+    top: 10%;
+}
+
+.arts img{
+    position: relative;
+    width: 40%;
+    opacity: 40%;
 }

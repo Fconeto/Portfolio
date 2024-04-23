@@ -13,6 +13,11 @@
     --cor-logo: white;
     --cor-body: linear-gradient(to right, #252525 29%, transparent 29%), linear-gradient(to bottom, #111920, #323c46);
     --cor-main1: #774069;
+    --cor-main2: #13131f;
+    --font-desc: clamp(.1rem, 3vw + 0.1rem, 1rem);
+    --font-app: clamp(.1rem, 2vw + 0.1rem, 1rem);
+    --font-hora: clamp(.1rem, 1vw + 0.1rem, 0.8rem);
+    --font-logo: clamp(.2rem, 2vw + 0.1rem, 1.6rem)
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
@@ -38,7 +43,7 @@
 
 body {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: var(--cor-body);
 }
@@ -52,18 +57,23 @@ header {
     
 }
 
+.nav_mobile {
+    display: none;
+}
+
 .logo {
     display: flex;
     justify-content: center;
-    width: 20%;
+    margin-left: 1%;
+    width: 50%;
     color: var(--cor-logo);
     /* background: #0c1311; */
-
 }
 
 .logo h1 {
-    font-size: 3vw;
-    font-family: Seconds;  
+    font-size: var(--font-logo);
+    font-family: 'Irish Grover', cursive;
+
 }
 
 nav {
@@ -128,9 +138,44 @@ nav ul li a:hover {
     margin-right: 4vw;
 }
 
+.desativar {
+    display: none;
+}
+
 @media screen and (max-width: 670px) {
     nav ul, .dia-noite, .lingua {
         display: none;
+    }
+
+    .nav_mobile {
+        position: fixed;
+        display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-main2);
+    }
+
+    .nav_mobile h2{
+        margin-bottom: 40px;
+    }
+    
+    .nav_mobile h2 a {
+        color: var(--cor-logo);
+        text-decoration: none;
+    }
+
+    .nav_mobile span {
+        position: absolute;
+        right: 10%;
+        top: 8%;
+        color: var(--cor-logo);
+        font-weight: 900;
+        font-size: large;
     }
 
     .menu-mobile{
@@ -141,7 +186,6 @@ nav ul li a:hover {
         left: 90vw;
         width: 4.2vw;
         height: 2.5vw;
-        background-color: green;
         cursor: pointer;
     }
 

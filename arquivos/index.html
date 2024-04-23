@@ -10,19 +10,24 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/tela.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="./css/curriculo.css">
 </head>
 <body id="body">
     <header>
-        <nav class="">
-            <a href="index.html" class="logo"><h1>FCO NETO</h1></a>
-            <div class="menu-mobile">
+        <nav>
+            <a href="index.html" class="logo"><h1>FRANCISCO LINHARES</h1></a>
+            <div id="menu-hbg" class="menu-mobile">
                 <div></div>
             </div>
+            <div id="menu_tela" class="nav_mobile">
+                <span id="menu-fechar">X</span>
+                <h2><a id="atalho_sobre" href="#sobre">SOBRE</a></h2>
+                <h2><a id="atalho_projetos" href="#projetos">PROJETOS</a></h2>
+                <h2><a href="home-english.html" class="">ENGLISH</a></h2>
+            </div>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">SOBRE</a></li>
-                <li><a href="">GITHUB</a></li>
-                <li><a href="">LINKEDIN</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
             </ul>
                 <div id="tema" class="dia-noite noite-check">
                     <div id="sol-lua" class="lua"></div>
@@ -35,14 +40,15 @@
 
     <div class="principal">
         <div class="tela">
+            <img class="eu" src="./img/eu.jpg" alt="">
             <div id="horario" class="hora"><h2></h2></div>
-            <div class="bateria"></div>
             <div class="app">
-                <a href=""><h2>Portfolio</h2></a>
-                <a href=""><h2>Contatos</h2></a>
-                <a name="instagram" target="_blank" href="https://www.instagram.com/fco_linharess/"><img src="https://i0.wp.com/trucao.com.br/wp-content/uploads/2018/07/instagram-logo.png?fit=1200%2C1200&ssl=1" alt="Instagram"></a>
-                <a name="github" target="_blank" href="https://github.com/Fconeto"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github"></a>
-                <a name="linkedin" target="_blank" href="https://www.linkedin.com/in/francisco-linhares-76344b210/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin"></a>
+                <h2>Redes sociais</h2>
+                <div>
+                    <a class="icon github" target="_blank" href="https://github.com/Fconeto"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="Github"></a>
+                    <a class="icon linkedin" target="_blank" href="https://www.linkedin.com/in/francisco-linhares-76344b210/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="Linkedin"></a>
+                    <a class="icon instagram" target="_blank" href="https://www.instagram.com/fco_linharess/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram"></a>    
+                </div>
             </div>
             <div>
                 
@@ -50,14 +56,51 @@
         </div>
         <div class="descricao">
             <h1 class="titulo">FULL STACK DEVELOPER</h1>
-            <p>Trabalho tanto com frontend e backend</p>
         </div>
     </div>
+
+    <main id="sobre" class="main2">
+        <div id="resume" class="curriculo">
+            <h1>SOBRE MIM</h1>
+            <h2>Nome: Francisco Linhares da Silva Neto</h2>
+            <h2>Data de nascimento: 04/08/2001</h2>
+            <h2>Contato: (88) 99936-3358</h2>
+            <h2>E-mail: linharesipuce@gmail.com</h2>
+            <h1>FORMAÇÃO</h1>
+            <h2>Técnico em Redes de computadores - EEEP Antônio Tarcísio Aragão - 2016 - 2018</h2>
+            <h2>Graduação em Sistemas de informação - UFC - 2022.1 - Em andamento</h2>
+            <h1>EXPERIÊNCIA PROFISSIONAL</h1>
+            <h2>Estagiário - Coimbra Contabilidade e Assessoria - 08/2018 - 12/2018</h2>
+            <h2>Analista de suporte técnico - JN Moura Sistemas de Gestão - 08/2023 - Presente</h2>
+            <h1>CONHECIMENTOS</h1>
+            <h2>Javascript</h2>
+            <h2>Desenvolvimento WEB</h2>
+            <h2>React</h2>
+            <h2>Bootstrap</h2>
+            <h2>Python</h2>
+            <h2>MySQL</h2>
+            <h1>PROJETOS</h1>
+            <h2>Fastannotation</h2>
+            <p>O Fastannotation foi um projeto desenvolvido por mim e minha equipe durante o período 
+                de 1 ano da minha bolsa na UFC, esse projeto consiste em uma plataforma WEB onde o 
+                usuário poderia criar seus projetos textuais, tanto relacionados a faculdade quanto ao trabalho
+                e categorizar seus textos com mais facilidade, permitindo organizar seus projetos, 
+                identificando trechos com maior relevância, criando categorias para os paragráfos, entre
+                outras coisas.
+            </p>
+            <h2>Localiza UFC</h2>
+            <p>Localiza UFC é um projeto que está sendo desenvolvido por mim e mais um colega para o Hackathon
+                do ano de 2024 na UFC, esse projeto consiste em uma aplicação que vai permitir a qualquer pessoa
+                ter acesso a um mapa virtual dos campus da UFC que vai exibir as salas e todas as programações,
+                incluindo eventos, aulas, minicursos, refeições do RU e entre outras coisas.
+            </p>
+        </div>
+      </main>
     
     <main class="main1">
-        <div class="projetos">
+        <div id="projetos" class="projetos">
             <h2>PROJETOS</h2>
-            <a href="https://codepen.io/collection/RzwBPy" class="card sites">
+            <a target="_blank" href="https://github.com/Fconeto/Sites" class="card sites">
                 <div class="pagina">
                     <div class="site-art"></div>
                 </div>
@@ -66,19 +109,25 @@
             <a href="" class="card animations">
                 <h2>Animações</h2>
             </a>
-            <a href="" class="card arts">
+            <a target="_blank" href="https://codepen.io/fconeto" class="card arts">
                 <h2>Artes em CSS</h2>
+                <div>
+                    <img src="./img/Screenshot_1.png" alt="">
+                    <img src="./img/Screenshot_2.png" alt="">
+                    <img src="./img/Screenshot_3.png" alt="">    
+                    <img src="./img/Screenshot_4.png" alt="">    
+                    <img src="./img/Screenshot_5.png" alt="">    
+                </div>
+
             </a>
             <a href="" class="card jogos">
                 <h2>Jogos <br> (em breve)</h2>
             </a>
         </div>
     </main>
-
-    <footer>
-    </footer>
 </body>
 <script src="script/tema.js"></script>
 <script src="script/hora.js"> </script>
+<script src="script/menu.js"></script>
 
 </html>
